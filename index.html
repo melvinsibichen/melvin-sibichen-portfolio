@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melvin Sibichen — Senior Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer with 4+ years of experience building enterprise web and mobile applications with Angular, React and Spring Boot across Healthcare, GRC, Insurance and Learning platforms." />
+  <meta name="author" content="Melvin Sibichen" />
+  <meta name="theme-color" content="#0b0d10" />
+
+  <!-- Social preview (LinkedIn, WhatsApp, X). After deploying, set og:url and add an og:image (1200x630 PNG). -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Melvin Sibichen — Senior Software Engineer" />
+  <meta property="og:description" content="Angular specialist delivering enterprise web and mobile applications, with full-stack reach into React and Spring Boot." />
+  <!-- <meta property="og:url" content="https://your-domain.com/" /> -->
+  <!-- <meta property="og:image" content="https://your-domain.com/assets/og-image.png" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d10'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='%23ff5c38'%3EMS%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script>
+    // Runs before paint: enables JS-only animations and applies the saved theme without a flash.
+    document.documentElement.classList.add('js');
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+      var savedAccent = localStorage.getItem('accent');
+      if (savedAccent) document.documentElement.setAttribute('data-accent', savedAccent);
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#home" aria-label="Melvin Sibichen — home">
+      <span class="nav__mark">MS</span>
+      <span class="nav__name">Melvin Sibichen</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="paletteToggle" type="button" aria-label="Choose colour theme" aria-expanded="false" aria-controls="palette">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-.9 2-2 0-.5-.2-1-.5-1.300-.3-.4-.5-.8-.5-1.300 0-1.100.9-2 2-2h2.200A3.800 3.800 0 0 0 21 10.600C21 6.400 17 3 12 3z"/><circle cx="7.500" cy="11.500" r="1"/><circle cx="10.500" cy="7.500" r="1"/><circle cx="15" cy="7.500" r="1"/></svg>
+      </button>
+      <div class="palette" id="palette" role="group" aria-label="Colour theme">
+        <p class="palette__title">Colour theme</p>
+        <div class="palette__grid">
+          <button class="swatch" type="button" data-accent-option="coral" style="--sw:#ff5c38" aria-pressed="true">Coral</button>
+          <button class="swatch" type="button" data-accent-option="ocean" style="--sw:#4da3ff" aria-pressed="false">Ocean</button>
+          <button class="swatch" type="button" data-accent-option="emerald" style="--sw:#34d399" aria-pressed="false">Emerald</button>
+          <button class="swatch" type="button" data-accent-option="violet" style="--sw:#a78bfa" aria-pressed="false">Violet</button>
+          <button class="swatch" type="button" data-accent-option="amber" style="--sw:#fbbf24" aria-pressed="false">Amber</button>
+          <button class="swatch" type="button" data-accent-option="rose" style="--sw:#fb7185" aria-pressed="false">Rose</button>
+          <button class="swatch" type="button" data-accent-option="cyan" style="--sw:#22d3ee" aria-pressed="false">Cyan</button>
+        </div>
+      </div>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__inner container">
+        <div class="hero__grid">
+        <div class="hero__content">
+        <p class="eyebrow hero__eyebrow"><span class="pulse"></span>Senior Software Engineer · Kerala, India</p>
+        <h1 class="hero__title" aria-label="Melvin Sibichen">
+          <span class="hero__hello" aria-hidden="true">Hi, I'm</span>
+          <span class="hero__line" data-split>Melvin</span>
+          <span class="hero__line hero__line--accent" data-split>Sibichen</span>
+        </h1>
+        <p class="hero__role">
+          <span class="hero__role-prefix">I build</span>
+          <span class="typed" id="typed" aria-live="off">enterprise Angular applications</span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero__lede">
+          4+ years delivering enterprise web and mobile applications — specialising in Angular,
+          with full-stack reach into React and Spring Boot across Healthcare, GRC, Insurance and Learning platforms.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#experience">View experience
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="assets/Melvin-Sibichen-Resume.pdf" download="Melvin-Sibichen-Resume.pdf" data-resume>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+            Download résumé
+          </a>
+        </div>
+        </div>
+
+        <div class="hero__visual" id="heroVisual" aria-hidden="true">
+          <div class="hero__halo"></div>
+          <div class="code-card">
+            <div class="code-card__bar"><i></i><i></i><i></i><span>engineer.ts</span></div>
+            <div class="code-card__body">
+              <div class="cl" style="--l:0"><span class="t-kw">const</span> <span class="t-var">engineer</span> = {</div>
+              <div class="cl" style="--l:1">  <span class="t-key">name</span>: <span class="t-str">'Melvin Sibichen'</span>,</div>
+              <div class="cl" style="--l:2">  <span class="t-key">role</span>: <span class="t-str">'Senior Software Engineer'</span>,</div>
+              <div class="cl" style="--l:3">  <span class="t-key">experience</span>: <span class="t-str">'4+ years'</span>,</div>
+              <div class="cl" style="--l:4">  <span class="t-key">core</span>: [<span class="t-str">'Angular'</span>, <span class="t-str">'TypeScript'</span>, <span class="t-str">'RxJS'</span>],</div>
+              <div class="cl" style="--l:5">  <span class="t-key">ships</span>: [<span class="t-str">'React'</span>, <span class="t-str">'Spring Boot'</span>, <span class="t-str">'PostgreSQL'</span>],</div>
+              <div class="cl" style="--l:6">  <span class="t-key">domains</span>: [<span class="t-str">'Healthcare'</span>, <span class="t-str">'GRC'</span>, <span class="t-str">'Insurance'</span>],</div>
+              <div class="cl" style="--l:7">};<span class="code-card__cursor"></span></div>
+            </div>
+          </div>
+          <span class="float-chip float-chip--1"><i></i>Angular v15–21</span>
+          <span class="float-chip float-chip--2"><i></i>React</span>
+          <span class="float-chip float-chip--3"><i></i>Spring Boot</span>
+        </div>
+        </div>
+
+        <dl class="stats">
+          <div class="stat"><dt>Years of experience</dt><dd><span data-count="4">4</span>+</dd></div>
+          <div class="stat"><dt>Industry domains</dt><dd><span data-count="5">5</span></dd></div>
+          <div class="stat"><dt>Angular versions shipped</dt><dd>v<span data-count="15">15</span>–<span data-count="21">21</span></dd></div>
+          <div class="stat"><dt>Users on insurance platform</dt><dd><span data-count="1000">1,000</span>+</dd></div>
+        </dl>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about section"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Angular</span><i>✦</i><span>TypeScript</span><i>✦</i><span>React</span><i>✦</i><span>RxJS</span><i>✦</i><span>D3.js</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>Java</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>AWS</span><i>✦</i><span>SCSS</span><i>✦</i>
+        <span>Angular</span><i>✦</i><span>TypeScript</span><i>✦</i><span>React</span><i>✦</i><span>RxJS</span><i>✦</i><span>D3.js</span><i>✦</i><span>Spring Boot</span><i>✦</i><span>Java</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>AWS</span><i>✦</i><span>SCSS</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">01 — About</p>
+          <h2>Front-end depth,<br /><em>full-stack range.</em></h2>
+        </header>
+        <div class="about">
+          <div class="about__text reveal">
+            <p class="lead">
+              I'm a Senior Software Engineer who specialises in Angular front-end development and enjoys
+              owning features from the first client conversation to the production release.
+            </p>
+            <p>
+              Over the last four years I've designed reusable component systems from Figma, built interactive
+              D3.js data visualisations, and migrated high-risk modules of a live application from AngularJS to Angular 18.
+              Along the way I extended into React and Spring Boot (Java), contributing to full-stack features with
+              REST APIs and relational databases.
+            </p>
+            <p>
+              My work spans GRC, Healthcare, Insurance, and Learning &amp; Event Management — and began with an onsite
+              internship on a mission-critical Underwater Ranges solution for the Indian Navy.
+            </p>
+          </div>
+          <ul class="about__cards">
+            <li class="mini-card reveal">
+              <span class="mini-card__num">01</span>
+              <h3>Component architecture</h3>
+              <p>Atomic Design, BEM and scalable SCSS for reusable, consistent UI at enterprise scale.</p>
+            </li>
+            <li class="mini-card reveal">
+              <span class="mini-card__num">02</span>
+              <h3>End-to-end delivery</h3>
+              <p>From requirement analysis and stakeholder collaboration through build, test and release.</p>
+            </li>
+            <li class="mini-card reveal">
+              <span class="mini-card__num">03</span>
+              <h3>Full-stack fluency</h3>
+              <p>React and Angular front ends, Spring Boot APIs, and PostgreSQL schema and query work.</p>
+            </li>
+            <li class="mini-card reveal">
+              <span class="mini-card__num">04</span>
+              <h3>Quality mindset</h3>
+              <p>Performance, accessibility, cross-browser compatibility, unit testing and code reviews.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">02 — Experience</p>
+          <h2>Where I've <em>worked.</em></h2>
+        </header>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline__rail" aria-hidden="true"><div class="timeline__fill" id="timelineFill"></div></div>
+
+          <article class="tl reveal">
+            <div class="tl__dot" aria-hidden="true"></div>
+            <div class="tl__meta">
+              <span class="tl__date">Sep 2025 — Present</span>
+              <span class="badge badge--live">Current</span>
+            </div>
+            <div class="tl__body">
+              <h3>Senior Software Engineer</h3>
+              <p class="tl__company">Xcubated Business Solutions Pvt. Ltd · Kerala, India</p>
+
+              <div class="tl__project">
+                <h4>XageCare — Healthcare Compliance &amp; Care Management Platform</h4>
+                <ul>
+                  <li>Delivered end-to-end features across web and mobile applications, working across the React front end, Spring Boot APIs and business logic, and PostgreSQL database changes.</li>
+                  <li>Engineered application workflows, backend services, API integrations and database functionality across the stack.</li>
+                  <li>Handled PostgreSQL schema and data changes, SQL queries, API troubleshooting and frontend–backend integration.</li>
+                </ul>
+              </div>
+              <div class="tl__project">
+                <h4>Learning &amp; Event Management Platform</h4>
+                <ul>
+                  <li>Worked directly with clients and stakeholders to understand requirements, plan features, refine designs and manage scope.</li>
+                  <li>Led end-to-end front-end feature delivery — planning, UI design, implementation, testing and release across desktop and mobile views.</li>
+                  <li>Designed Angular features and reusable components for complex workflows.</li>
+                </ul>
+              </div>
+              <div class="tl__project">
+                <h4>Insurance Management Platform</h4>
+                <ul>
+                  <li>Developed and enhanced AngularJS features: business workflows, reusable components, forms, validations and REST API integrations.</li>
+                  <li>Played a key role in modernising the live application by migrating critical, high-risk modules from AngularJS to Angular 18 while maintaining functional continuity.</li>
+                  <li>Supported production through UI enhancements, troubleshooting, testing and defect resolution alongside backend teams.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>React</li><li>Angular 18</li><li>AngularJS</li><li>Spring Boot</li><li>PostgreSQL</li><li>Oracle</li><li>Jenkins</li></ul>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot" aria-hidden="true"></div>
+            <div class="tl__meta"><span class="tl__date">Sep 2023 — Jun 2025</span></div>
+            <div class="tl__body">
+              <h3>Software Engineer</h3>
+              <p class="tl__company">Beinex Consultancy Pvt. Ltd · Kerala, India</p>
+              <div class="tl__project">
+                <h4>Aurex.ai — Governance, Risk &amp; Compliance Platform</h4>
+                <ul>
+                  <li>Partnered with UI/UX and core Angular teams to build enterprise interfaces from Figma, applying Atomic Design, BEM and scalable SCSS architecture.</li>
+                  <li>Created interactive data visualisations with D3.js and custom Angular directives as reusable components for complex, data-driven interfaces.</li>
+                  <li>Managed front-end feature delivery across Agile sprints and multiple environments — API integration, code reviews, technical documentation and production issue resolution.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>Angular</li><li>TypeScript</li><li>D3.js</li><li>RxJS</li><li>SCSS</li><li>Figma</li></ul>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot" aria-hidden="true"></div>
+            <div class="tl__meta"><span class="tl__date">Aug 2022 — Aug 2023</span></div>
+            <div class="tl__body">
+              <h3>Associate Software Engineer</h3>
+              <p class="tl__company">Nest Digital Pvt. Ltd · Kerala, India</p>
+              <div class="tl__project">
+                <h4>Internal Application Development</h4>
+                <ul>
+                  <li>Contributed to front-end and back-end features using Angular and Java/Spring Boot — UI workflows, REST APIs, backend services and database-driven functionality.</li>
+                  <li>Developed reusable Angular components from Figma designs and contributed to Spring Boot services, API integration and backend debugging.</li>
+                  <li>Took part in Agile feature planning, implementation, testing and API validation with Postman.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>Angular</li><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>Postman</li></ul>
+            </div>
+          </article>
+
+          <article class="tl reveal">
+            <div class="tl__dot" aria-hidden="true"></div>
+            <div class="tl__meta"><span class="tl__date">Jan 2022 — Mar 2022</span></div>
+            <div class="tl__body">
+              <h3>Intern</h3>
+              <p class="tl__company">Mobilexion Technologies Pvt. Ltd · Onsite at Indian Navy Naval Base, Goa</p>
+              <div class="tl__project">
+                <h4>Underwater Ranges — Indian Navy</h4>
+                <ul>
+                  <li>Selected through campus recruitment and worked onsite at the Naval Base, contributing to UI implementation and application modules in LabVIEW, including testing and debugging.</li>
+                  <li>Supported hardware implementation and system integration in collaboration with the L&amp;T engineering team.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>LabVIEW</li><li>System Integration</li><li>Testing</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">03 — Selected Work</p>
+          <h2>Platforms I've <em>helped build.</em></h2>
+        </header>
+
+        <!-- To show a "Visit website" button on a card, put the project's public URL in that card's card__link href. Cards with an empty href show no button. -->
+        <div class="work">
+          <article class="card card--wide reveal" data-tilt>
+            <div class="card__glow" aria-hidden="true"></div>
+            <p class="card__domain">Healthcare</p>
+            <h3>XageCare</h3>
+            <p class="card__desc">A compliance and care-management platform supporting the day-to-day operations of healthcare agencies — on web and mobile.</p>
+            <p class="card__role"><strong>My role</strong> Full-stack feature delivery across React, Spring Boot and PostgreSQL.</p>
+            <ul class="tags"><li>React</li><li>Spring Boot</li><li>PostgreSQL</li><li>Mobile</li></ul>
+            <a class="card__link" href="https://www.xage.care/" target="_blank" rel="noopener noreferrer">Visit website <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <span class="card__index" aria-hidden="true">01</span>
+          </article>
+
+          <article class="card reveal" data-tilt>
+            <div class="card__glow" aria-hidden="true"></div>
+            <p class="card__domain">Governance, Risk &amp; Compliance</p>
+            <h3>Aurex.ai</h3>
+            <p class="card__desc">Enterprise GRC platform helping organisations manage governance, risk, compliance and related business processes.</p>
+            <p class="card__role"><strong>My role</strong> Reusable Angular UI system and D3.js data visualisations.</p>
+            <ul class="tags"><li>Angular</li><li>D3.js</li><li>SCSS</li></ul>
+            <a class="card__link" href="https://aurex.ai/" target="_blank" rel="noopener noreferrer">Visit website <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <span class="card__index" aria-hidden="true">02</span>
+          </article>
+
+          <article class="card reveal" data-tilt>
+            <div class="card__glow" aria-hidden="true"></div>
+            <p class="card__domain">Insurance</p>
+            <h3>Insurance Management Platform</h3>
+            <p class="card__desc">Large-scale application serving 1,000+ users for core insurance and business operations.</p>
+            <p class="card__role"><strong>My role</strong> Migrated critical modules from AngularJS to Angular 18 on a live system.</p>
+            <ul class="tags"><li>Angular 18</li><li>AngularJS</li><li>Java</li><li>Oracle</li></ul>
+            <a class="card__link" href="https://www.tristargroup.net/" target="_blank" rel="noopener noreferrer">Visit website <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <span class="card__index" aria-hidden="true">03</span>
+          </article>
+
+          <article class="card reveal" data-tilt>
+            <div class="card__glow" aria-hidden="true"></div>
+            <p class="card__domain">EdTech</p>
+            <h3>Learning &amp; Event Management</h3>
+            <p class="card__desc">Digital learning and credential platform for managing learning activities, achievements, verifiable credentials and educational events.</p>
+            <p class="card__role"><strong>My role</strong> Led front-end delivery from client requirements to release.</p>
+            <ul class="tags"><li>Angular</li><li>UI Design</li><li>Responsive</li></ul>
+            <a class="card__link" href="https://qseverse.com/" target="_blank" rel="noopener noreferrer">Visit website <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <span class="card__index" aria-hidden="true">04</span>
+          </article>
+
+          <article class="card reveal" data-tilt>
+            <div class="card__glow" aria-hidden="true"></div>
+            <p class="card__domain">Defence</p>
+            <h3>Underwater Ranges</h3>
+            <p class="card__desc">Mission-critical solution for the Indian Navy, delivered onsite at the Naval Base in Goa.</p>
+            <p class="card__role"><strong>My role</strong> UI implementation, testing and system-integration support.</p>
+            <ul class="tags"><li>LabVIEW</li><li>Hardware Integration</li></ul>
+            <a class="card__link" href="" target="_blank" rel="noopener noreferrer">Visit website <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <span class="card__index" aria-hidden="true">05</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__head section__head--constellation reveal" id="constellationHead">
+          <div class="constellation__canvas" id="constellation"></div>
+          <p class="eyebrow">04 — Skills</p>
+          <h2>The <em>toolkit.</em></h2>
+          <p class="constellation__info" id="constellationInfo" aria-live="polite">Hover or tap a project or skill to trace which skills powered which projects.</p>
+        </header>
+
+        <div class="skills">
+          <div class="skill-group skill-group--primary reveal">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li class="chip chip--hot">Angular (v15–v21)</li><li class="chip chip--hot">TypeScript</li><li class="chip chip--hot">React JS</li>
+              <li class="chip">JavaScript (ES6+)</li><li class="chip">RxJS</li><li class="chip">D3.js</li><li class="chip">HTML5</li><li class="chip">CSS3</li>
+              <li class="chip">SCSS</li><li class="chip">Bootstrap</li><li class="chip">Figma</li><li class="chip">Responsive Web Design</li>
+              <li class="chip">Component-Based Architecture</li><li class="chip">Atomic Design</li><li class="chip">BEM</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend</h3>
+            <ul class="chips">
+              <li class="chip chip--hot">Java</li><li class="chip chip--hot">Spring Boot</li><li class="chip">REST API Development</li><li class="chip">API Integration</li><li class="chip">API Debugging</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Database</h3>
+            <ul class="chips"><li class="chip chip--hot">PostgreSQL</li><li class="chip">MySQL</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; Tools</h3>
+            <ul class="chips">
+              <li class="chip">AWS EC2</li><li class="chip">S3</li><li class="chip">Lambda</li><li class="chip">API Gateway</li><li class="chip">Route 53</li><li class="chip">Postman</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Version Control</h3>
+            <ul class="chips"><li class="chip">Git</li><li class="chip">GitHub</li><li class="chip">GitLab</li><li class="chip">SVN</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Quality &amp; Engineering</h3>
+            <ul class="chips">
+              <li class="chip">Performance Optimisation</li><li class="chip">Accessibility (Level Access, Lighthouse)</li><li class="chip">Cross-Browser Compatibility</li>
+              <li class="chip">Unit Testing</li><li class="chip">Code Reviews</li><li class="chip">Debugging</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Ways of Working</h3>
+            <ul class="chips">
+              <li class="chip">Agile / Scrum</li><li class="chip">SDLC</li><li class="chip">Jira</li><li class="chip">Feature Planning</li><li class="chip">Requirement Analysis</li><li class="chip">Stakeholder Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">05 — Education &amp; Certification</p>
+          <h2>Foundations.</h2>
+        </header>
+
+        <div class="edu">
+          <article class="edu__item reveal">
+            <span class="edu__year">2020 — 2022</span>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p>Rajagiri College of Social Sciences, Kalamassery</p>
+          </article>
+          <article class="edu__item reveal">
+            <span class="edu__year">2017 — 2020</span>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Marian College Kuttikanam (Autonomous)</p>
+          </article>
+          <article class="edu__item edu__item--cert reveal">
+            <span class="edu__year">Oct 2025 · Certification</span>
+            <h3>OWASP Top 10: Protecting Against Threats and Vulnerabilities</h3>
+            <p>Udemy</p>
+          </article>
+        </div>
+
+        <div class="beyond reveal">
+          <div>
+            <h3>Beyond the keyboard</h3>
+            <ul class="chips"><li class="chip">Singing</li><li class="chip">Music concerts</li><li class="chip">Exploring new technologies</li><li class="chip">Travelling</li></ul>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="chips"><li class="chip">English</li><li class="chip">Malayalam</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner reveal">
+        <p class="eyebrow">06 — Contact</p>
+        <h2>Let's build something <em>reliable.</em></h2>
+        <p class="contact__lede">Open to conversations about senior front-end and full-stack roles, or interesting product problems.</p>
+        <a class="contact__mail" href="mailto:sibichenmelvin@gmail.com">sibichenmelvin@gmail.com</a>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:sibichenmelvin@gmail.com">Email me</a>
+          <a class="btn btn--ghost" href="assets/Melvin-Sibichen-Resume.pdf" download="Melvin-Sibichen-Resume.pdf" data-resume>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+            Download résumé
+          </a>
+          <a class="btn btn--ghost" href="https://github.com/melvinsibichen" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.02c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/melvinsibichen/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Melvin Sibichen</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+  <script src="constellation.js" defer></script>
+</body>
+</html>
