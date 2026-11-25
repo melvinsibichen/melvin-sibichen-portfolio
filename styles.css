@@ -10,8 +10,10 @@
   --text: #ecebe6;
   --muted: #9aa1ab;
   /* Accent palette: --a-dark is used on the dark theme, --a-light on the light theme. */
-  --a-dark: #ff5c38;
-  --a-light: #e0431f;
+  --a-dark: #34d399;
+  --a-light: #0a7f55;
+  --code-key: #a1a1aa;
+  --code-str: #d4d4d8;
   --accent: var(--a-dark);
   --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
   --on-accent: #0b0d10;
@@ -40,8 +42,8 @@
     --accent-soft: color-mix(in srgb, var(--accent) 10%, transparent);
     --on-accent: #ffffff;
     --dot: 21, 23, 26;
-    --code-key: #0b62c4;
-    --code-str: #1a7f37;
+    --code-key: #52525b;
+    --code-str: #27272a;
   }
 }
 :root[data-theme='light'] {
@@ -56,13 +58,14 @@
   --accent-soft: color-mix(in srgb, var(--accent) 10%, transparent);
   --on-accent: #ffffff;
   --dot: 21, 23, 26;
-  --code-key: #0b62c4;
-  --code-str: #1a7f37;
+  --code-key: #52525b;
+  --code-str: #27272a;
 }
 
-/* Colour themes (chosen from the palette button in the nav). Coral is the default above. */
+/* Colour themes (chosen from the palette button in the nav). Emerald on black and white is the default above. */
+:root[data-accent='gold']    { --a-dark: #d4b483; --a-light: #8a6a2f; }
+:root[data-accent='mono']    { --a-dark: #ededed; --a-light: #18181b; }
 :root[data-accent='ocean']   { --a-dark: #4da3ff; --a-light: #1d63d8; }
-:root[data-accent='emerald'] { --a-dark: #34d399; --a-light: #0a7f55; }
 :root[data-accent='violet']  { --a-dark: #a78bfa; --a-light: #6d3fe0; }
 :root[data-accent='amber']   { --a-dark: #fbbf24; --a-light: #b45309; }
 :root[data-accent='rose']    { --a-dark: #fb7185; --a-light: #d42a55; }

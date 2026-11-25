@@ -27,7 +27,7 @@
     paletteToggle.setAttribute('aria-expanded', String(open));
   };
   const markAccent = (name) => swatches.forEach((s) => s.setAttribute('aria-pressed', String(s.dataset.accentOption === name)));
-  markAccent(root.getAttribute('data-accent') || 'coral');
+  markAccent(root.getAttribute('data-accent') || 'emerald');
 
   let switchTimer = 0;
   swatches.forEach((swatch) => swatch.addEventListener('click', () => {
@@ -35,7 +35,7 @@
     root.classList.add('theme-switching');
     clearTimeout(switchTimer);
     switchTimer = setTimeout(() => root.classList.remove('theme-switching'), 500);
-    if (name === 'coral') root.removeAttribute('data-accent');
+    if (name === 'emerald') root.removeAttribute('data-accent');
     else root.setAttribute('data-accent', name);
     markAccent(name);
     try { localStorage.setItem('accent', name); } catch (e) { /* storage unavailable */ }
